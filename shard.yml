@@ -1,0 +1,38 @@
+name: apidemo
+version: 0.1.0
+
+authors:
+  - Amber <contact@ambercr.io>
+
+crystal: 0.23.1
+
+license: UNLICENSED
+
+targets:
+  apidemo:
+    main: src/apidemo.cr
+
+  amber:
+    main: lib/amber/src/amber/cli.cr
+
+dependencies:
+  amber:
+    github: amber-crystal/amber
+
+  granite_orm:
+    github: amber-crystal/granite-orm
+
+  quartz-mailer:
+    github: amber-crystal/quartz-mailer
+
+  jasper_helpers:
+    github: amber-crystal/jasper-helpers
+
+  pg:
+    github: will/crystal-pg
+ 
+development_dependencies:
+  amber_spec:
+    github: amber-crystal/amber-spec
+
+
