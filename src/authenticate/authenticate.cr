@@ -22,7 +22,7 @@ class Authenticate < Amber::Pipe::Base
       context.current_user = user
       call_next(context)
     else
-      return call_next(context) if ["/login", "/session", "/users/new", "/oauth2/token", "/oauth2/token/generate"].includes?(context.request.path)
+      return call_next(context) if ["/oauth2/token"].includes?(context.request.path)
       context.flash["warning"] = "Please login"
       context.response.headers.add "Location", "/login"
       context.response.status_code = 401
