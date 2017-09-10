@@ -8,4 +8,9 @@ require "./handlers/**"
 require "./controllers/application_controller"
 require "./controllers/**"
 
+require "./data.cr"
+require "./init.cr"
+require "./json_constructor.cr"
+require "./basalt_ams.cr"
+
 Amber::Server.start
