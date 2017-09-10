@@ -30,9 +30,7 @@ dependencies:
 
   pg:
     github: will/crystal-pg
- 
+
 development_dependencies:
   amber_spec:
     github: amber-crystal/amber-spec
-
-
